@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bogoc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Loginform">
+
+    <TextView
+        android:id="@+id/loginform"
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="LOGINFORM"
+        android:textColor="#03423A"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/username"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginform"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:text="username"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="50dp"
+        android:text="password"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+
+        android:id="@+id/txtusename"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginform"
+
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/username" />
+
+    <EditText
+
+        android:id="@+id/txtpassword"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/password"
+        android:layout_below="@+id/txtusename"/>
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtpassword"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:text="Exit"
+        android:textSize="25sp"
+        android:textColor="#D19999"
+        android:backgroundTint="#3F51B5"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtpassword"
+        android:layout_toEndOf="@+id/exit"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:text="Login"
+        android:textSize="25sp"
+        android:textColor="#D19999"
+        android:backgroundTint="#3F51B5"/>
+
+
+
+
+
+
+</RelativeLayout>

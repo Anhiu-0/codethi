@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6CE84"
+    tools:context=".dangkykytucxa">
+
+    <TextView
+        android:id="@+id/dangkykytucxa"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="ĐĂNG KÝ KÝ TÚC XÁ"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/loaiphongngu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dangkykytucxa"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="LOAI PHONG NGU"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/loai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/loai1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:text="Phòng riêng 1 giường"
+            android:textColor="#19A5E4"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/loai2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Phòng ghép 2 giường"
+            android:textColor="#19A5E4"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/loai3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Phòng ghép 4 giường"
+            android:textColor="#19A5E4"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/loai4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Phòng ghép 8 giường"
+            android:textColor="#19A5E4"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dichvu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loai"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Dịch Vụ"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/cacdichvu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/dichvu1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="400dp"
+            android:text="Bãi đỗ xe"
+            android:textColor="#600670"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/dichvu2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="wifi"
+            android:textColor="#600670"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="#2196F3"
+            android:text="Choose"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="#2196F3"
+            android:text="Exit"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="#2196F3"
+            android:text="Next"
+            android:textSize="19sp" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
